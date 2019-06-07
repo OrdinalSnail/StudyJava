@@ -6,6 +6,7 @@ import java.util.Arrays;
 import ordinal.snail.java.Util;
 
 /**
+ * study ArrayList
  *
  * @author d_mokharev
  */
@@ -15,12 +16,24 @@ public class ArrayListTest {
 
     }
 
+    /**
+     * Get Capacity of ArrayList
+     *
+     * @param l incoming list
+     * @return capacity
+     * @throws Exception
+     */
     public static String getCapacity(ArrayList<?> l) throws Exception {
         Field dataField = ArrayList.class.getDeclaredField("elementData");
         dataField.setAccessible(true);
         return String.valueOf(((Object[]) dataField.get(l)).length);
     }
 
+    /**
+     * Test 1. Study capacity;
+     *
+     * @throws Exception
+     */
     public static void test1_Capacity() throws Exception {
         Util.msg("TrimToSize Begin");
         ArrayList<Integer> arrList = new ArrayList<>(15);
@@ -35,6 +48,13 @@ public class ArrayListTest {
 
     }
 
+    /**
+     *
+     * msg about capacity and size arraylist
+     *
+     * @param arrList
+     * @throws Exception
+     */
     private static void msgSize(ArrayList<Integer> arrList) throws Exception {
         Util.msg("Size:", String.valueOf(arrList.size()), " Capacity: ", getCapacity(arrList));
     }
