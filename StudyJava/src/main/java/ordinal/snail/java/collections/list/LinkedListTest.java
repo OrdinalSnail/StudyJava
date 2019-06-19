@@ -1,5 +1,8 @@
 package ordinal.snail.java.collections.list;
 
+import java.util.LinkedList;
+import java.util.List;
+
 /**
  * Классический связный список, основанный на объектах с ссылками между ними
  *
@@ -13,5 +16,16 @@ package ordinal.snail.java.collections.list;
  * @author d_mokharev
  */
 public class LinkedListTest {
+    
+   public static void go(){
+   
+   }
+   
+   private static void test1(){
+    LinkedList<Integer> list = new LinkedList<Integer>();
+    
+   }
 
 }
+
+

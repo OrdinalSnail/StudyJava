@@ -1,11 +1,13 @@
 package ordinal.snail.java.collections.list;
 
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.LinkedList;
 
 /**
- * 1) LinkedList в абсолютных величинах проигрывает ArrayList по потребляемой памяти и по скорости выполнения операций
- * 2) LinkedList предпочтительнее, при вставке/удалении в середину списка или в случаях, когда необходимо
+ * 1) LinkedList в абсолютных величинах проигрывает ArrayList по потребляемой
+ * памяти и по скорости выполнения операций 2) LinkedList предпочтительнее, при
+ * вставке/удалении в середину списка или в случаях, когда необходимо
  * гарантированное время добавления элемента в список.
  *
  * @author d_mokharev
@@ -19,8 +21,54 @@ public class ListTest {
     }
 
     public static void go() throws Exception {
-        ArrayListTest.go();
-        RemoveTest.go();
+        //ArrayListTest.go();
+        //RemoveTest.go();
+        //productivityTest1();
+        productivityTest2();
+    }
+
+    public static void productivityTest1() {
+        int count = 20000000;
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        Date arrDate1 = new Date();
+        for (int i = 0; i < count; i++) {
+            arr.add(i);
+        }
+        Date arrDate2 = new Date();
+        long dur1 = (arrDate2.getTime() - arrDate1.getTime()) / 1000;
+        System.out.println("array: " + dur1);
+
+        LinkedList<Integer> link = new LinkedList<>();
+        Date linkDate1 = new Date();
+        for (int i = 0; i < count; i++) {
+            link.add(i);
+        }
+        Date linkDate2 = new Date();
+        long dur2 = (linkDate2.getTime() - linkDate1.getTime()) / 1000;
+        System.out.println("link: " + dur2);
+    }
+
+    public static void productivityTest2() {
+        int count = 300000;
+
+        ArrayList<Integer> arr = new ArrayList<>();
+        Date arrDate1 = new Date();
+        for (int i = 0; i < count; i++) {
+            arr.add(i % 2, i);
+        }
+        Date arrDate2 = new Date();
+        long dur1 = (arrDate2.getTime() - arrDate1.getTime()) / 1000;
+        System.out.println("array in middle: " + dur1);
+
+        LinkedList<Integer> link = new LinkedList<>();
+        Date linkDate1 = new Date();
+        for (int i = 0; i < count; i++) {
+            link.add(i % 2, i);
+        }
+        Date linkDate2 = new Date();
+        long dur2 = (linkDate2.getTime() - linkDate1.getTime()) / 1000;
+        System.out.println("link middle: " + dur2);
     }
 
 }
