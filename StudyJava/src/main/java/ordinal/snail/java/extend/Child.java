@@ -10,6 +10,9 @@ package ordinal.snail.java.extend;
  * @author home
  */
 public class Child{
+    
+    
+    
 
     
 }
