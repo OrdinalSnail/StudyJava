@@ -31,6 +31,7 @@ public class ArrayListTest {
 
     public static void go() throws Exception {
         test1_Capacity();
+
     }
 
     /**
@@ -39,7 +40,7 @@ public class ArrayListTest {
      * @throws Exception
      */
     public static void test1_Capacity() throws Exception {
-        Util.msg("TrimToSize Begin");
+        Util.msg("*****Тест 1. Проверка размера. TrimToSize Begin");
         ArrayList<Integer> arrList = new ArrayList<>(15);
         msgSize(arrList);
         Util.msg("add 8 values");
@@ -48,9 +49,11 @@ public class ArrayListTest {
         Util.msg("trimToSize");
         arrList.trimToSize();
         msgSize(arrList);
-        Util.msg("TrimToSize End");
+        Util.msg("*****Тест 1. Проверка размера. TrimToSize End");
 
     }
+
+   
 
     /**
      * Get Capacity of ArrayList
