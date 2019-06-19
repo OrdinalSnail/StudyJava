@@ -3,6 +3,7 @@ package ordinal.snail.java.collections.list;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.LinkedList;
+import java.util.List;
 
 /**
  * 1) LinkedList в абсолютных величинах проигрывает ArrayList по потребляемой
@@ -25,6 +26,16 @@ public class ListTest {
         //RemoveTest.go();
         //productivityTest1();
         productivityTest2();
+    }
+
+    private static void syntTest() {
+        //List<Integer> list1 = new List<Integer>();
+        List<Integer> list2 = new ArrayList<Integer>();
+        //List<Number> list3 = new ArrayList<Integer>();
+        List<? extends Integer> list32 = new ArrayList<Integer>();
+        //List<Integer> list4 = new ArrayList<Number>();
+        List<Integer> list5 = new ArrayList<>();
+
     }
 
     public static void productivityTest1() {
