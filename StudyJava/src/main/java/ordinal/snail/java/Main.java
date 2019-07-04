@@ -1,6 +1,7 @@
 package ordinal.snail.java;
 
 import ordinal.snail.java.collections.list.ListTest;
+import ordinal.snail.java.optional.OptionalTest;
 import ordinal.snail.java.trycatch.TryCatch;
 
 /**
@@ -14,7 +15,8 @@ public class Main {
      */
     public static void main(String[] args) throws Exception {
         //ListTest.go();
-        TryCatch.go();
+        //TryCatch.go();
+        OptionalTest.go();
     }
 
 }
