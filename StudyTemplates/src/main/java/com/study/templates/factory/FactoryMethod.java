@@ -29,9 +29,9 @@ public class FactoryMethod implements ITemplate {
 
     @Override
     public void test() {
-        IDeveloper dev = DeveloperFactory.createDeveloper(DeveloperType.PHP);
+        IDeveloper dev = DeveloperFactory.createDynamicDeveloper(DeveloperType.PHP);
         dev.writeCode();
-        dev = DeveloperFactory.createDeveloper(DeveloperType.JAVA);
+        dev = DeveloperFactory.createDeveloperBySupplier(DeveloperType.JAVA);
         dev.writeCode();
     }
 

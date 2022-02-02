@@ -9,8 +9,7 @@ import java.util.logging.Logger;
  */
 public class DeveloperFactory {
 
-
-    public static IDeveloper createDeveloper(DeveloperType type) {
+    public static IDeveloper createDynamicDeveloper(DeveloperType type) {
         for (DeveloperType val : DeveloperType.values()) {
             if (val.equals(type)) {
                 try {
@@ -26,6 +25,15 @@ public class DeveloperFactory {
         }
         return null;
 
+    }
+
+    public static IDeveloper createDeveloperBySupplier(DeveloperType type) {
+        for (DeveloperType val : DeveloperType.values()) {
+            if (val.equals(type)) {
+                return val.getInst().get();
+            }
+        }
+        return null;
     }
 
 }
