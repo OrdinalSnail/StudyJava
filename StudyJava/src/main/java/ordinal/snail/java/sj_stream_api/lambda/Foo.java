@@ -1,4 +1,4 @@
-package ordinal.snail.java.sj_lambda;
+package ordinal.snail.java.sj_stream_api.lambda;
 
 /**
  *

@@ -1,4 +1,4 @@
-package ordinal.snail.java.sj_optional;
+package ordinal.snail.java.sj_stream_api.func_int;
 
 import java.util.Optional;
 import ordinal.snail.java.sj_collections.sj_list.ListTest;
