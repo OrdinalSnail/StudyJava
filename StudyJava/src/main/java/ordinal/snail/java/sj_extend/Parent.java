@@ -1,4 +1,4 @@
-package ordinal.snail.java.extend;
+package ordinal.snail.java.sj_extend;
 
 /**
  *

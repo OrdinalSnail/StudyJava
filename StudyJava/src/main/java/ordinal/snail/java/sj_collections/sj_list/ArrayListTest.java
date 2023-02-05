@@ -1,4 +1,4 @@
-package ordinal.snail.java.collections.list;
+package ordinal.snail.java.sj_collections.sj_list;
 
 import java.lang.reflect.Field;
 import java.util.ArrayList;

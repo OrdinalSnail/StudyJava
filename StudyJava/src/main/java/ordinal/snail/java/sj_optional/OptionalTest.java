@@ -1,7 +1,7 @@
-package ordinal.snail.java.optional;
+package ordinal.snail.java.sj_optional;
 
 import java.util.Optional;
-import ordinal.snail.java.collections.list.ListTest;
+import ordinal.snail.java.sj_collections.sj_list.ListTest;
 
 /**
  *

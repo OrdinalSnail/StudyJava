@@ -1,8 +1,8 @@
 package ordinal.snail.java;
 
-import ordinal.snail.java.collections.list.ListTest;
-import ordinal.snail.java.optional.OptionalTest;
-import ordinal.snail.java.trycatch.TryCatch;
+import ordinal.snail.java.sj_collections.sj_list.ListTest;
+import ordinal.snail.java.sj_optional.OptionalTest;
+import ordinal.snail.java.sj_try_catch.TryCatch;
 
 /**
  *

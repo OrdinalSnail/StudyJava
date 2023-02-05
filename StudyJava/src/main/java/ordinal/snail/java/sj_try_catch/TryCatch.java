@@ -1,4 +1,4 @@
-package ordinal.snail.java.trycatch;
+package ordinal.snail.java.sj_try_catch;
 
 /**
  *

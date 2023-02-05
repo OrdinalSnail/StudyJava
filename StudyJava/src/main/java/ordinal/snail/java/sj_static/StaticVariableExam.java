@@ -1,4 +1,4 @@
-package ordinal.snail.java.ex_static;
+package ordinal.snail.java.sj_static;
 
 import ordinal.snail.java.IExaminable;
 

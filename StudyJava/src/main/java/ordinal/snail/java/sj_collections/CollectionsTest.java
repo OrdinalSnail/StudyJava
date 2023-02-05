@@ -1,6 +1,6 @@
-package ordinal.snail.java.collections;
+package ordinal.snail.java.sj_collections;
 
-import ordinal.snail.java.collections.list.ListTest;
+import ordinal.snail.java.sj_collections.sj_list.ListTest;
 
 /**
  *
