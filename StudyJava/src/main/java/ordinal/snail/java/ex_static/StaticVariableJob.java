@@ -3,20 +3,20 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.mycompany.studystatic;
+package ordinal.snail.java.ex_static;
 
 /**
  *
  * @author d_mokharev
  */
-public class Job {
+public class StaticVariableJob {
 
     private static int count = 0;
     private final int jobID;
     private final String name;
     private final boolean isFilled;
 
-    public Job(String title) {
+    public StaticVariableJob(String title) {
         name = title;
         isFilled = false;
         jobID = ++count;
