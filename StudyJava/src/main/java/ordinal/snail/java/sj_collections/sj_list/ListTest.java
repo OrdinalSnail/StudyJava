@@ -28,13 +28,14 @@ public class ListTest {
         productivityTest2();
     }
 
-    private static void syntTest() {
-        //List<Integer> list1 = new List<Integer>();
+    private static void instantinateTest() {
+        //List<Integer> list1 = new List<Integer>();//'List' is abstract; cannot be instantiated
         List<Integer> list2 = new ArrayList<Integer>();
-        //List<Number> list3 = new ArrayList<Integer>();
+        //List<Number> list3 = new ArrayList<Integer>();//can't be
         List<? extends Integer> list32 = new ArrayList<Integer>();
-        //List<Integer> list4 = new ArrayList<Number>();
+        //List<Integer> list4 = new ArrayList<Number>();//can't be
         List<Integer> list5 = new ArrayList<>();
+        List<Number> list6 = new ArrayList<>();
 
     }
 

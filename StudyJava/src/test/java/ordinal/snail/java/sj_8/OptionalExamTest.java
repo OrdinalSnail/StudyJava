@@ -1,15 +1,15 @@
-package ordinal.snail.java.sj_stream_api.func_int;
+package ordinal.snail.java.sj_8;
 
 import ordinal.snail.java.IExaminable;
 import org.junit.Test;
 
 import static org.junit.Assert.*;
 
-public class FuncIntExamTest {
+public class OptionalExamTest {
 
     @Test
     public void exam() {
-        IExaminable exam = new FuncIntExam();
+        IExaminable exam = new OptionalExam();
         exam.exam();
     }
 }

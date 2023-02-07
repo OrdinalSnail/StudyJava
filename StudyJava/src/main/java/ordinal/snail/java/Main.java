@@ -1,6 +1,6 @@
 package ordinal.snail.java;
 
-import ordinal.snail.java.sj_stream_api.func_int.OptionalTest;
+import ordinal.snail.java.sj_8.OptionalExam;
 
 /**
  *
@@ -14,7 +14,7 @@ public class Main {
     public static void main(String[] args) throws Exception {
         //ListTest.go();
         //TryCatch.go();
-        OptionalTest.go();
+        //OptionalExam.exam();
     }
 
 }
