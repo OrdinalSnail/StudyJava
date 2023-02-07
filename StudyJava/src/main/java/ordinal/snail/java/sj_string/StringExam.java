@@ -16,10 +16,10 @@ public class StringExam implements IExaminable {
         System.out.println(first == firstNew); // False
 
         System.out.print("Literal equals(object): ");
-        System.out.println(first.equals(firstNew));
+        System.out.println(first.equals(firstNew));//true
 
         System.out.print("Literal compareTo(object): ");
-        System.out.println(first.compareTo(firstNew));
+        System.out.println(first.compareTo(firstNew));//0
 
         firstNew = firstNew.intern();
         System.out.print("Literal == object.intern(): ");
